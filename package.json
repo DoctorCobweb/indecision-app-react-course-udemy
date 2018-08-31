@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "der",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
+  },
+  "repository": "https://github.com/DoctorCobweb/indecision-app-react-course-udemy"
 }
