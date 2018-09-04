@@ -1,7 +1,5 @@
-console.log('app.js is running');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import IndecisionApp from './components/IndecisionApp'
 
-// JSX - Javascript XML
-var template = <p>diBLAHoes this change</p>;
-var appRoot = document.getElementById("app");
-
-ReactDOM.render(template, appRoot );
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
