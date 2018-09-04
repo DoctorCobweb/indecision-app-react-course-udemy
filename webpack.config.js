@@ -22,5 +22,12 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/
     }]
+  },
+
+  // helps with getting correct line nums
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    port: 8181
   }
 };
