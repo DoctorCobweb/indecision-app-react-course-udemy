@@ -21,11 +21,20 @@ module.exports = {
       loader: 'babel-loader',
       test: /\.js$/,
       exclude: /node_modules/
+    },
+    {
+      test: /\.s?css$/, // the s? means 's' or 'no s'
+      use: [
+        'style-loader', // dump css contents into DOM in a syle tage
+        'css-loader', // read in css files
+        'sass-loader'
+      ]
     }]
   },
 
   // helps with getting correct line nums
   devtool: 'cheap-module-eval-source-map',
+
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     port: 8181
